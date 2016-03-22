@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12595F561CA1A3710000DAF9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12595F551CA1A3710000DAF9 /* Network.swift */; };
+		126187A41CA19F260018DD54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126187A31CA19F260018DD54 /* AppDelegate.swift */; };
+		126187A61CA19F260018DD54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126187A51CA19F260018DD54 /* ViewController.swift */; };
+		126187A91CA19F260018DD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126187A71CA19F260018DD54 /* Main.storyboard */; };
+		126187AB1CA19F260018DD54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126187AA1CA19F260018DD54 /* Assets.xcassets */; };
+		126187AE1CA19F260018DD54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126187AC1CA19F260018DD54 /* LaunchScreen.storyboard */; };
+		BDF9B7E1ADAEE627DCCB40F4 /* Pods_GoogleInstantSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FD0BE6A822C6EF353924C0 /* Pods_GoogleInstantSearch.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12595F551CA1A3710000DAF9 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		126187A01CA19F260018DD54 /* GoogleInstantSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleInstantSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		126187A31CA19F260018DD54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		126187A51CA19F260018DD54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		126187A81CA19F260018DD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		126187AA1CA19F260018DD54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		126187AD1CA19F260018DD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		126187AF1CA19F260018DD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6ED17A4FA37C2EDED76751 /* Pods-GoogleInstantSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleInstantSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleInstantSearch/Pods-GoogleInstantSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		BF726E0CAFCF2BBAC31CA052 /* Pods-GoogleInstantSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleInstantSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleInstantSearch/Pods-GoogleInstantSearch.release.xcconfig"; sourceTree = "<group>"; };
+		C0FD0BE6A822C6EF353924C0 /* Pods_GoogleInstantSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleInstantSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1261879D1CA19F260018DD54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF9B7E1ADAEE627DCCB40F4 /* Pods_GoogleInstantSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		126187971CA19F260018DD54 = {
+			isa = PBXGroup;
+			children = (
+				126187A21CA19F260018DD54 /* GoogleInstantSearch */,
+				126187A11CA19F260018DD54 /* Products */,
+				A0A68CAD4ACC50B92CEDB7CD /* Pods */,
+				C9E7D911897F31B8DEE1DEA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		126187A11CA19F260018DD54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				126187A01CA19F260018DD54 /* GoogleInstantSearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		126187A21CA19F260018DD54 /* GoogleInstantSearch */ = {
+			isa = PBXGroup;
+			children = (
+				126187A31CA19F260018DD54 /* AppDelegate.swift */,
+				126187A51CA19F260018DD54 /* ViewController.swift */,
+				12595F551CA1A3710000DAF9 /* Network.swift */,
+				126187A71CA19F260018DD54 /* Main.storyboard */,
+				126187AA1CA19F260018DD54 /* Assets.xcassets */,
+				126187AC1CA19F260018DD54 /* LaunchScreen.storyboard */,
+				126187AF1CA19F260018DD54 /* Info.plist */,
+			);
+			path = GoogleInstantSearch;
+			sourceTree = "<group>";
+		};
+		A0A68CAD4ACC50B92CEDB7CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E6ED17A4FA37C2EDED76751 /* Pods-GoogleInstantSearch.debug.xcconfig */,
+				BF726E0CAFCF2BBAC31CA052 /* Pods-GoogleInstantSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9E7D911897F31B8DEE1DEA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0FD0BE6A822C6EF353924C0 /* Pods_GoogleInstantSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1261879F1CA19F260018DD54 /* GoogleInstantSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 126187B21CA19F260018DD54 /* Build configuration list for PBXNativeTarget "GoogleInstantSearch" */;
+			buildPhases = (
+				1E8AB85A655AA26E36DD5CBB /* Check Pods Manifest.lock */,
+				1261879C1CA19F260018DD54 /* Sources */,
+				1261879D1CA19F260018DD54 /* Frameworks */,
+				1261879E1CA19F260018DD54 /* Resources */,
+				FD50F2D7D10C34D4A50822CD /* Embed Pods Frameworks */,
+				36508612736047D13C4D3626 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleInstantSearch;
+			productName = GoogleInstantSearch;
+			productReference = 126187A01CA19F260018DD54 /* GoogleInstantSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		126187981CA19F260018DD54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Vladimir Burdukov";
+				TargetAttributes = {
+					1261879F1CA19F260018DD54 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 1261879B1CA19F260018DD54 /* Build configuration list for PBXProject "GoogleInstantSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 126187971CA19F260018DD54;
+			productRefGroup = 126187A11CA19F260018DD54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1261879F1CA19F260018DD54 /* GoogleInstantSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1261879E1CA19F260018DD54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126187AE1CA19F260018DD54 /* LaunchScreen.storyboard in Resources */,
+				126187AB1CA19F260018DD54 /* Assets.xcassets in Resources */,
+				126187A91CA19F260018DD54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E8AB85A655AA26E36DD5CBB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36508612736047D13C4D3626 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleInstantSearch/Pods-GoogleInstantSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD50F2D7D10C34D4A50822CD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleInstantSearch/Pods-GoogleInstantSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1261879C1CA19F260018DD54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126187A61CA19F260018DD54 /* ViewController.swift in Sources */,
+				126187A41CA19F260018DD54 /* AppDelegate.swift in Sources */,
+				12595F561CA1A3710000DAF9 /* Network.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		126187A71CA19F260018DD54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				126187A81CA19F260018DD54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		126187AC1CA19F260018DD54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				126187AD1CA19F260018DD54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		126187B01CA19F260018DD54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		126187B11CA19F260018DD54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		126187B31CA19F260018DD54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E6ED17A4FA37C2EDED76751 /* Pods-GoogleInstantSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoogleInstantSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = by.burdukov.GoogleInstantSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		126187B41CA19F260018DD54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF726E0CAFCF2BBAC31CA052 /* Pods-GoogleInstantSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoogleInstantSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = by.burdukov.GoogleInstantSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1261879B1CA19F260018DD54 /* Build configuration list for PBXProject "GoogleInstantSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				126187B01CA19F260018DD54 /* Debug */,
+				126187B11CA19F260018DD54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		126187B21CA19F260018DD54 /* Build configuration list for PBXNativeTarget "GoogleInstantSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				126187B31CA19F260018DD54 /* Debug */,
+				126187B41CA19F260018DD54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 126187981CA19F260018DD54 /* Project object */;
+}
