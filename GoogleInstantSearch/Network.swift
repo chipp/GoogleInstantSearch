@@ -22,7 +22,8 @@ class Network {
 //    http://google.com/complete/search?output=firefox&q=keyword
     func suggestKeywork(keyword: String) -> Observable<[String]> {
         return Observable.deferred { () -> Observable<[String]> in
-            guard let url = NSURL(string: "http://google.com/complete/search?output=firefox&q=\(keyword)") else {
+            guard let baseURL = NSURL(string: "http://google.com/complete/search"),
+                let url = self.url(baseURL, withParams: ["output" : "firefox", "q" : keyword]) else {
                 return Observable.error(Error.InvalidURL)
             }
             
@@ -35,6 +36,12 @@ class Network {
                 return suggest
             }
         }
+    }
+    
+    private func url(url: NSURL, withParams params: [String: String]) -> NSURL? {
+        let components = NSURLComponents(URL: url, resolvingAgainstBaseURL: false)
+        components?.queryItems = params.map(NSURLQueryItem.init)
+        return components?.URL
     }
 
 }

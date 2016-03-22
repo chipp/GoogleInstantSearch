@@ -20,22 +20,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        searchTerm.asObservable().flatMapLatest { keyword -> Observable<[String]> in
-            guard let keyword = keyword else {
-                return Observable.just([])
-            }
-            
-            return Network.instance.suggestKeywork(keyword)
-        }.bindTo(suggestions).addDisposableTo(disposeBag)
-        
-        suggestions.asDriver()
-            .drive(tableView.rx_itemsWithCellIdentifier("SuggestCell", cellType: UITableViewCell.self)) { [weak self] (row, item, cell) in
-                cell.textLabel?.attributedText = self?.highlightSearchTerm(self?.searchTerm.value, inSuggestion: item)
+        keywordTextField.rx_text.asDriver()
+            .throttle(0.5).distinctUntilChanged()
+            .flatMapLatest { keyword in
+                Observable.zip(Observable.just(keyword), Network.instance.suggestKeywork(keyword)) { keyword, suggestions in
+                    suggestions.map { [weak self] suggest in
+                        self?.highlightSearchTerm(keyword, inSuggestion: suggest)
+                    }
+                    }.asDriver(onErrorJustReturn: [NSAttributedString(string: "❌ No results")])
+            }.drive(tableView.rx_itemsWithCellIdentifier("SuggestCell", cellType: UITableViewCell.self)) { (row, suggest, cell) in
+                cell.textLabel?.attributedText = suggest
             }.addDisposableTo(disposeBag)
-        
-        searchTerm.value = "Engl"
     }
     
     private func highlightSearchTerm(searchTerm: String?, inSuggestion suggestion: String) -> NSAttributedString? {
