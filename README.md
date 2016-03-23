@@ -1,0 +1,1 @@
+`bundle install && pod install && open GoogleInstantSearch.xcworkspace`
