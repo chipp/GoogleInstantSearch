@@ -13,6 +13,7 @@ import RxCocoa
 class ViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
+    private let activityIndicator = ActivityIndicator()
     @IBOutlet private weak var keywordTextField: UITextField! {
         didSet {
             // Add left content padding for textField
@@ -26,18 +27,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // bind activity indicator with UIApplications' network indicator
+        activityIndicator.drive(UIApplication.sharedApplication().rx_networkActivityIndicatorVisible).addDisposableTo(disposeBag)
+        
         keywordTextField.rx_text.asDriver()
             // .throttle(0.5) – will wait 0.5s for new value from textField, if no value received – send latest value to subscriber
             // .distinctUntilChanged() – will forward value only if it changed in compare to previous value from textField
             .throttle(0.5).distinctUntilChanged()
-            .flatMapLatest { keyword -> Driver<[NSAttributedString?]> in
+            .flatMapLatest { [weak self] keyword -> Driver<[NSAttributedString?]> in
                 // if textField is empty then just clear tableView
                 guard keyword.characters.count > 0 else {
                     return Observable.just([]).asDriver(onErrorJustReturn: [])
                 }
                 
+                // create network request
+                var networkRequest: Observable<[String]> = Network.instance.suggestKeyword(keyword)
+                // if activity indicator exists then connect request with activity indicator
+                if let activityIndicator = self?.activityIndicator {
+                    networkRequest = networkRequest.trackActivity(activityIndicator)
+                }
+                
                 // in other case request network for list of suggestions
-                return Observable.zip(Observable.just(keyword), Network.instance.suggestKeywork(keyword)) { keyword, suggestions -> [NSAttributedString?] in
+                return Observable.zip(Observable.just(keyword), networkRequest) { keyword, suggestions -> [NSAttributedString?] in
                     // if no suggestions found then return NSAttributedString with "No results" message
                     guard suggestions.count > 0 else {
                         return [NSAttributedString(string: "No results")]

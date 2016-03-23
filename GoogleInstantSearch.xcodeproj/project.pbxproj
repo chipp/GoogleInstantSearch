@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123349481CA29E2800B6BC86 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123349471CA29E2800B6BC86 /* ActivityIndicator.swift */; };
 		12595F561CA1A3710000DAF9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12595F551CA1A3710000DAF9 /* Network.swift */; };
 		126187A41CA19F260018DD54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126187A31CA19F260018DD54 /* AppDelegate.swift */; };
 		126187A61CA19F260018DD54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126187A51CA19F260018DD54 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		123349471CA29E2800B6BC86 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		12595F551CA1A3710000DAF9 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		126187A01CA19F260018DD54 /* GoogleInstantSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleInstantSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		126187A31CA19F260018DD54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		126187A21CA19F260018DD54 /* GoogleInstantSearch */ = {
 			isa = PBXGroup;
 			children = (
+				123349471CA29E2800B6BC86 /* ActivityIndicator.swift */,
 				126187A31CA19F260018DD54 /* AppDelegate.swift */,
 				126187A51CA19F260018DD54 /* ViewController.swift */,
 				12595F551CA1A3710000DAF9 /* Network.swift */,
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123349481CA29E2800B6BC86 /* ActivityIndicator.swift in Sources */,
 				126187A61CA19F260018DD54 /* ViewController.swift in Sources */,
 				126187A41CA19F260018DD54 /* AppDelegate.swift in Sources */,
 				12595F561CA1A3710000DAF9 /* Network.swift in Sources */,

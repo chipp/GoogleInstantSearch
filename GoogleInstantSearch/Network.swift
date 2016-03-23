@@ -19,7 +19,7 @@ class Network {
         case InvalidResponse
     }
     
-    func suggestKeywork(keyword: String) -> Observable<[String]> {
+    func suggestKeyword(keyword: String) -> Observable<[String]> {
         // Create "cold" observable – request will be performed only when someone subscribes it
         return Observable.deferred { () -> Observable<[String]> in
             guard let baseURL = NSURL(string: "http://google.com/complete/search"),
