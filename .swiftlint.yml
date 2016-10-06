@@ -1,0 +1,17 @@
+excluded:
+  - Pods
+line_length: 120
+type_name:
+  excluded:
+    - UI
+variable_name:
+  excluded:
+    - id
+custom_rules:
+  parameters_parentheses:
+    name: "Parameters parentheses"
+    regex: "(\{ ?\((\w+(, ?)?)+\) in)"
+    match_kinds:
+      - identifier
+      - keyword
+    severity: warning
